@@ -1,10 +1,26 @@
-# eve-knowledge
+<div align="center">
+  <h1>eve-knowledge</h1>
 
-[![npm version](https://img.shields.io/npm/v/eve-knowledge.svg)](https://www.npmjs.com/package/eve-knowledge)
-[![CI](https://github.com/aiswarya797/eve-knowledge/actions/workflows/ci.yml/badge.svg)](https://github.com/aiswarya797/eve-knowledge/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+  <p><strong>Add cited <code>agent/knowledge/</code> folders to Eve agents.</strong></p>
 
-Add a cited `agent/knowledge/` folder to Eve agents.
+  <p>Index local knowledge files, expose them through a generated Eve tool, and answer with citations.</p>
+
+  <p>
+    <a href="https://www.npmjs.com/package/eve-knowledge"><img alt="npm version" src="https://img.shields.io/npm/v/eve-knowledge.svg" /></a>
+    <a href="https://github.com/aiswarya797/eve-knowledge/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/aiswarya797/eve-knowledge/actions/workflows/ci.yml/badge.svg" /></a>
+    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+  </p>
+
+  <p>
+    <a href="#quickstart">Quickstart</a> |
+    <a href="#mental-model">Mental model</a> |
+    <a href="#when-to-use-what">When to use what</a> |
+    <a href="#file-conventions">File conventions</a> |
+    <a href="#config">Config</a>
+  </p>
+</div>
+
+---
 
 `agent/knowledge/` is an `eve-knowledge` convention, not a native Eve slot. The package indexes those files explicitly and exposes them through a generated `search_knowledge` Eve tool.
 
