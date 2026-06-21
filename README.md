@@ -1,6 +1,14 @@
-<div align="center">
-  <h1>eve-knowledge</h1>
+<p align="center">
+  <a href="https://github.com/aiswarya797/eve-knowledge">
+    <picture>
+      <source srcset="docs/assets/eve-knowledge-logo-dark.svg" media="(prefers-color-scheme: dark)">
+      <source srcset="docs/assets/eve-knowledge-logo-light.svg" media="(prefers-color-scheme: light)">
+      <img src="docs/assets/eve-knowledge-logo-light.svg" alt="eve-knowledge logo" width="520">
+    </picture>
+  </a>
+</p>
 
+<div align="center">
   <p><strong>Add cited <code>agent/knowledge/</code> folders to Eve agents.</strong></p>
 
   <p>Index local knowledge files, expose them through a generated Eve tool, and answer with citations.</p>
