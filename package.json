@@ -1,0 +1,76 @@
+{
+  "name": "eve-knowledge",
+  "version": "0.1.0",
+  "description": "Add a cited agent/knowledge folder to Eve agents.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiswarya797/eve-knowledge.git"
+  },
+  "homepage": "https://github.com/aiswarya797/eve-knowledge#readme",
+  "bugs": {
+    "url": "https://github.com/aiswarya797/eve-knowledge/issues"
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "bin": {
+    "eve-knowledge": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "docs/production-storage.md",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./cli": {
+      "types": "./dist/cli.d.ts",
+      "import": "./dist/cli.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "check": "npm run typecheck && npm run typecheck:examples && npm run test",
+    "prepack": "npm run build",
+    "test": "vitest run",
+    "typecheck:examples": "tsc --noEmit -p examples/basic-eve-agent/tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "eve",
+    "eve-agent",
+    "agents",
+    "ai-agents",
+    "rag",
+    "retrieval",
+    "citations",
+    "knowledge",
+    "memory",
+    "vercel"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "fast-glob": "^3.3.3",
+    "ignore": "^7.0.5",
+    "yaml": "^2.9.0",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

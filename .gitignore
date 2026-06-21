@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+.eve-knowledge/
+docs/brainstorms/
+.DS_Store
+*.log

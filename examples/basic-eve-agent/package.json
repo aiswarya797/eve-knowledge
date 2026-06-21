@@ -1,0 +1,13 @@
+{
+  "name": "basic-eve-knowledge-example",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "eve": "^0.11.10",
+    "eve-knowledge": "file:../.."
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
+

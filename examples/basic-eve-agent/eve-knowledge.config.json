@@ -1,0 +1,4 @@
+{
+  "knowledgeDir": "agent/knowledge",
+  "storeDir": ".eve-knowledge"
+}
