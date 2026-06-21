@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://github.com/aiswarya797/eve-knowledge">
     <picture>
-      <source srcset="docs/assets/eve-knowledge-logo-dark.svg" media="(prefers-color-scheme: dark)">
-      <source srcset="docs/assets/eve-knowledge-logo-light.svg" media="(prefers-color-scheme: light)">
-      <img src="docs/assets/eve-knowledge-logo-light.svg" alt="eve-knowledge logo" width="520">
+      <source srcset="docs/assets/eve-knowledge-wordmark-caps-dark.svg" media="(prefers-color-scheme: dark)">
+      <source srcset="docs/assets/eve-knowledge-wordmark-caps-light.svg" media="(prefers-color-scheme: light)">
+      <img src="docs/assets/eve-knowledge-wordmark-caps-light.svg" alt="EVE-KNOWLEDGE logo" width="520">
     </picture>
   </a>
 </p>
