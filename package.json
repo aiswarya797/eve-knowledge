@@ -15,7 +15,7 @@
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "bin": {
-    "eve-knowledge": "./dist/cli.js"
+    "eve-knowledge": "dist/cli.js"
   },
   "files": [
     "dist",
