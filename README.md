@@ -1,5 +1,9 @@
 # eve-knowledge
 
+[![npm version](https://img.shields.io/npm/v/eve-knowledge.svg)](https://www.npmjs.com/package/eve-knowledge)
+[![CI](https://github.com/aiswarya797/eve-knowledge/actions/workflows/ci.yml/badge.svg)](https://github.com/aiswarya797/eve-knowledge/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Add a cited `agent/knowledge/` folder to Eve agents.
 
 `agent/knowledge/` is an `eve-knowledge` convention, not a native Eve slot. The package indexes those files explicitly and exposes them through a generated `search_knowledge` Eve tool.
