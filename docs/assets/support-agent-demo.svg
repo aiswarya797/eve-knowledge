@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="540" viewBox="0 0 980 540" role="img" aria-labelledby="title desc">
+  <title id="title">eve-knowledge support agent terminal demo</title>
+  <desc id="desc">Terminal transcript showing a support agent answer with citations from agent knowledge files.</desc>
+  <rect width="980" height="540" rx="14" fill="#111318"/>
+  <rect x="1" y="1" width="978" height="538" rx="14" fill="none" stroke="#2d3340"/>
+  <circle cx="34" cy="32" r="7" fill="#ff5f57"/>
+  <circle cx="58" cy="32" r="7" fill="#ffbd2e"/>
+  <circle cx="82" cy="32" r="7" fill="#28c840"/>
+  <text x="116" y="38" fill="#8b93a7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">support-agent-demo</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">
+    <text x="32" y="82" fill="#8bd5ff">$ node examples/basic-eve-agent/demo-support-agent.mjs</text>
+    <text x="32" y="126" fill="#f0f3fa">User: Can we refund a customer, and where do we find SOC 2 docs?</text>
+    <text x="32" y="176" fill="#9ee493">Tool: search_knowledge({ query: "refund policy", topK: 1 })</text>
+    <text x="56" y="206" fill="#cdd6e4">-&gt; Refunds are available for 30 days after purchase.</text>
+    <text x="80" y="236" fill="#f6d365">[agent/knowledge/product/refunds.md#Refunds]</text>
+    <text x="32" y="286" fill="#9ee493">Tool: search_knowledge({ query: "SOC 2 security documents", topK: 1 })</text>
+    <text x="56" y="316" fill="#cdd6e4">-&gt; SOC 2 reports are available under NDA through the security review queue.</text>
+    <text x="80" y="346" fill="#f6d365">[agent/knowledge/product/security.md#Security]</text>
+    <text x="32" y="396" fill="#f0f3fa">Assistant:</text>
+    <text x="32" y="426" fill="#f0f3fa">Yes. Refunds are available for 30 days after purchase. SOC 2 reports</text>
+    <text x="32" y="456" fill="#f0f3fa">are available under NDA through the security review queue.</text>
+    <text x="32" y="500" fill="#8bd5ff">Citations: refunds.md#Refunds, security.md#Security</text>
+  </g>
+</svg>

@@ -19,6 +19,10 @@ npx eve-knowledge index
 npx eve-knowledge search "refund policy"
 ```
 
+A tiny support-agent demo in `examples/basic-eve-agent` shows the generated search flow. Run it from a clone with `npm run demo:support`.
+
+![Support agent demo](https://raw.githubusercontent.com/aiswarya797/eve-knowledge/main/docs/assets/support-agent-demo.svg)
+
 `init` creates:
 
 ```txt

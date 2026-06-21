@@ -37,6 +37,7 @@
   "scripts": {
     "build": "tsup",
     "check": "npm run typecheck && npm run typecheck:examples && npm run test",
+    "demo:support": "npm run build && node examples/basic-eve-agent/demo-support-agent.mjs",
     "prepack": "npm run build",
     "test": "vitest run",
     "typecheck:examples": "tsc --noEmit -p examples/basic-eve-agent/tsconfig.json",
