@@ -1,7 +1,6 @@
 <svg width="540" height="144" viewBox="0 0 540 144" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">eve-knowledge</title>
-  <desc id="desc">Black and white eve-knowledge logo with stacked knowledge blocks above a clean wordmark.</desc>
-  <path fill="#000" d="M240 10h34v34h-34zM266 10h34v34h-34zM253 42h34v34h-34zM258 32h24v8h-24z"/>
-  <path fill="#fff" d="M248 18h18v18h-18zM274 18h18v18h-18zM261 50h18v18h-18z"/>
-  <text x="270" y="126" text-anchor="middle" fill="#000" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">eve-knowledge</text>
+  <desc id="desc">Black and white eve-knowledge logo with stacked knowledge blocks above an OpenCode-style block wordmark.</desc>
+  <path fill="#000" d="M240 10h34v34h-34zM266 10h34v34h-34zM253 42h34v34h-34zM258 32h24v8h-24zM78 94h24v6h-24zM78 94h6v30h-6zM96 94h6v18h-6zM78 106h24v6h-24zM78 118h24v6h-24zM108 94h6v18h-6zM126 94h6v18h-6zM114 112h6v6h-6zM120 118h6v6h-6zM138 94h24v6h-24zM138 94h6v30h-6zM156 94h6v18h-6zM138 106h24v6h-24zM138 118h24v6h-24zM171 112h18v6h-18zM198 94h6v30h-6zM204 106h6v6h-6zM210 100h6v6h-6zM216 94h6v6h-6zM210 112h6v6h-6zM216 118h6v6h-6zM228 94h6v30h-6zM234 94h12v6h-12zM246 100h6v24h-6zM240 100h6v6h-6zM258 94h24v6h-24zM258 94h6v30h-6zM276 94h6v30h-6zM258 118h24v6h-24zM288 94h6v30h-6zM312 94h6v30h-6zM300 106h6v18h-6zM294 118h6v6h-6zM306 118h6v6h-6zM324 88h6v36h-6zM324 118h18v6h-18zM348 94h24v6h-24zM348 94h6v30h-6zM366 94h6v18h-6zM348 106h24v6h-24zM348 118h24v6h-24zM378 94h24v6h-24zM378 94h6v30h-6zM396 88h6v36h-6zM378 118h24v6h-24zM408 94h24v6h-24zM408 94h6v30h-6zM426 94h6v36h-6zM408 118h24v6h-24zM414 124h18v6h-18zM420 112h12v6h-12zM438 94h24v6h-24zM438 94h6v30h-6zM456 94h6v18h-6zM438 106h24v6h-24zM438 118h24v6h-24z"/>
+  <path fill="#fff" d="M248 18h18v18h-18zM274 18h18v18h-18zM261 50h18v18h-18zM84 100h12v6h-12zM144 100h12v6h-12zM354 100h12v6h-12zM444 100h12v6h-12z"/>
 </svg>
