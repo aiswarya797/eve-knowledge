@@ -1,3 +1,6 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { Command } from "commander";
 import { checkKnowledge } from "./check.js";
 import { loadKnowledgeConfig } from "./config-loader.js";
@@ -94,7 +97,19 @@ export async function runCli(argv = process.argv): Promise<void> {
   await createCli().parseAsync(argv);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+export function isCliEntryPoint(metaUrl: string, argvPath = process.argv[1]): boolean {
+  if (!argvPath) return false;
+
+  const modulePath = fileURLToPath(metaUrl);
+
+  try {
+    return fs.realpathSync.native(modulePath) === fs.realpathSync.native(argvPath);
+  } catch {
+    return path.resolve(modulePath) === path.resolve(argvPath);
+  }
+}
+
+if (isCliEntryPoint(import.meta.url)) {
   await runCli();
 }
 

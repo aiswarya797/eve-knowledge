@@ -1,8 +1,9 @@
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { createCli } from "../src/cli.js";
+import { createCli, isCliEntryPoint } from "../src/cli.js";
 import { parseSearchKnowledgeInput } from "../src/input.js";
 import { toModelOutput } from "../src/model-output.js";
 import { scaffoldEveKnowledge, scaffoldFiles } from "../src/scaffold.js";
@@ -24,6 +25,21 @@ describe("createCli", () => {
     const cli = createCli();
 
     expect(cli.name()).toBe("eve-knowledge");
+  });
+
+  it.skipIf(process.platform === "win32")("recognizes npm bin symlinks as direct CLI entry points", async () => {
+    const packageBinDir = path.join(rootDir, "node_modules", "eve-knowledge", "dist");
+    const npmBinDir = path.join(rootDir, "node_modules", ".bin");
+    const cliPath = path.join(packageBinDir, "cli.js");
+    const symlinkPath = path.join(npmBinDir, "eve-knowledge");
+
+    await fs.mkdir(packageBinDir, { recursive: true });
+    await fs.mkdir(npmBinDir, { recursive: true });
+    await fs.writeFile(cliPath, "");
+    await fs.symlink(cliPath, symlinkPath);
+
+    expect(isCliEntryPoint(pathToFileURL(cliPath).href, symlinkPath)).toBe(true);
+    expect(isCliEntryPoint(pathToFileURL(cliPath).href, path.join(rootDir, "other-cli.js"))).toBe(false);
   });
 
   it("runs init, index, and search commands", async () => {
