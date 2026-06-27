@@ -1,6 +1,6 @@
 {
   "name": "eve-knowledge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add a cited agent/knowledge folder to Eve agents.",
   "type": "module",
   "license": "MIT",
